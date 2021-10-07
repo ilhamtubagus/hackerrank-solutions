@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "sort"
 
-func birthdayCakeCandles(candles []int32) int32 {
+func BirthdayCakeCandles(candles []int32) int32 {
 	// Write your code here
 	sort.Slice(candles, func(i, j int) bool {
 		return candles[i] > candles[j]

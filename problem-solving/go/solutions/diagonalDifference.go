@@ -1,10 +1,10 @@
-package main
+package solution
 
 import (
 	"math"
 )
 
-func diagonalDifference(arr [][]int32) int32 {
+func DiagonalDifference(arr [][]int32) int32 {
 	// Write your code here
 	n := len(arr)
 	diag := int32(0)

@@ -1,4 +1,4 @@
-package main
+package solution
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func superStack(operations []string) {
+func SuperStack(operations []string) {
 	stack := []int{0}
 	for _, v := range operations {
 		o := strings.Split(v, " ")

@@ -1,4 +1,4 @@
-package main
+package solution
 
 import (
 	"encoding/json"
@@ -11,7 +11,7 @@ import (
 var client = &http.Client{}
 var res map[string]interface{}
 
-func getMovieTitles(substr string) []string {
+func GetMovieTitles(substr string) []string {
 	request, err := http.NewRequest("GET", fmt.Sprintf("https://jsonmock.hackerrank.com/api/movies/search/?Title=%s", substr), nil)
 	if err != nil {
 		log.Fatal(err)
