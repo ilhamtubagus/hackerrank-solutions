@@ -1,2 +1,2 @@
 # hackerrank-solutions
-Hackerrank solutions implemented with c++ and go
+Hackerrank solutions implemented with Python and Go
