@@ -19,7 +19,7 @@ Then you need to find factors of second array:
 
 36 = 1, 2, 3, 4, **6**, 9, **12**, 18, 36
 
-Final step is to count how many numbers that are the appear at every element of first multiple of the first array and factors of the second array, which is 2 numbers (6 and 12)
+Final step is to count how many numbers that are appeared at every element of first multiple of the first array and factors of the second array, which is 2 numbers (6 and 12)
 
 lets take a look at test case#2.
 a = [2, 4]
