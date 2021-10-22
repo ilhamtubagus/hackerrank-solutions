@@ -11,21 +11,17 @@ func getGCD(x, y int32) int32 {
  func lcm(x, y int32) int32{
 	 return (x*y)/getGCD(x,y)
  }
- 
- func reduce(f func(v1, v2 int32) int32, a []int32) int32{
-	 var result int32
-	  if len(a) == 1 {
-			 x := a[0]
-			 y := int32(0)
-			 return f(x, y)
-		 }
-	 j:=1
-	 for i:= 0; i < len(a) - 1; i+=2{
-		 result = f(a[i], a[j])
-		 j++
-	 }
-	 return result
- }
+func reduce(a []int32, f func(v1, v2 int32) int32) int32 {
+	result := a[0]
+	var ins [2]int32
+	for i := 0; i < len(a); i++ {
+		ins[0] = result
+		ins[1] = a[i]
+		result = f(ins[0], ins[1])
+	}
+	return result
+}
+
  func GetTotalX(a []int32, b []int32) int32 {
 	 // Write your code here
 	 
