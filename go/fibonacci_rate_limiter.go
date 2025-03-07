@@ -55,6 +55,7 @@ func main() {
 		start := time.Now().UnixNano()
 		requestChan <- true
 		new := <-resultChan
+		//var new chan int = resultChan
 		if i < skip {
 			continue
 		}
