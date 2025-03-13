@@ -64,7 +64,13 @@ func findMedian(arr []int32) int32 {
 }
 
 func main() {
-	plusMinus([]int32{0, 1, 0, -4, 6, 5, -3})
-	fmt.Println(timeConversion("07:05:45PM"))
-	fmt.Println(findMedian([]int32{0, 1, 2, 4, 6, 5, 3}))
+	//plusMinus([]int32{0, 1, 0, -4, 6, 5, -3})
+	//fmt.Println(timeConversion("07:05:45PM"))
+	//fmt.Println(findMedian([]int32{0, 1, 2, 4, 6, 5, 3}))
+	//fmt.Println(lonelyinteger([]int32{1, 1, 2, 2, 3, 2, 4, 3}))
+	//fmt.Println(diagonalDifference([][]int32{
+	//	{11, 2, 4},
+	//	{4, 5, 6},
+	//	{10, 8, -12},
+	//}))
 }
